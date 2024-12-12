@@ -611,6 +611,16 @@ form input.clear_btn:hover {
 	background-color:#7C7C7C;
 }
 
+.social_icons a.leetcode_icon {
+	background-position:-200px 0;
+	background-color:#7C7C7C;
+}
+
+.social_icons a.hackerrank_icon {
+	background-position:-200px 0;
+	background-color:#7C7C7C;
+}
+
 .social_icons a.pinterest_icon {
 	background-position:-120px 0;
 	background-color:#e37769;
