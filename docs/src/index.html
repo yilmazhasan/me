@@ -656,6 +656,62 @@ Demo background-image
         <!--//social_icons-->
     </div>
     <!--//wrapper-->
+
+
+    <!-- Chat Start -->
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <div class="form-container">
+        <h1>Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea id="prompt" placeholder="Type message.." name="msg" required></textarea>
+        <span id="response"> </span>
+    
+        <button type="button" class="btn" onclick="sendbtnClicked()">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </div>
+    </div>
+    <script>
+        function sendbtnClicked() {
+            const prompt = document.getElementById("prompt").value;
+
+            const myHeaders = new Headers();
+            myHeaders.append("accept", "application/json");
+            myHeaders.append("Content-Type", "application/json");
+
+            const raw = JSON.stringify({
+                prompt
+            });
+
+            const requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+            };
+
+            fetch("https://genagents-custom.onrender.com/dialog", requestOptions)
+            .then((response) => response.text())
+            .then((result) => {
+                console.log(result)
+                document.getElementById("response").innerHTML = result;
+            })
+            .catch((error) => console.error(error));
+
+        }
+
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+    <!-- Chat End -->
+
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/less-1.4.2.min.js"></script>
