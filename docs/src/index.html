@@ -14,6 +14,7 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/hy.ico">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -40,20 +41,25 @@ Demo background-image
 -->
     <!--wrapper-->
     <div class="wrapper">
-        <div id="logo"><a href="./index.html">
-                HY
-            </a></div>
+        <div id="logo" style="padding: 15px; text-align: center;">
+            <a href="./index.html" style="color: #e36975 !important;">
+                h
+            </a>
+            <a href="./index.html" style="transform: scale(-1, -1); color: #eaa751 !important;">
+                h
+            </a>
+        </div>
         <!--container-->
         <div class="container">
             <div class="menu">
                 <ul>
                     <li class="first_menu_color"><a id="about" href="javascript:void(0);">About<span>me</span></a></li>
                     <li class="second_menu_color"><a id="resume" href="javascript:void(0);">Resume<span></span></a></li>
-                                       <!-- <li class="third_menu_color"><a id="works" href="javascript:void(0);"> <span></span></a></li>
+                    <!--
+                    <li class="fifth_menu_color"><a id="contacts" href="mailto:ylmzhsn@proton.me">Contact<span>me</span></a></li>
+                    <li class="third_menu_color"><a id="works" href="javascript:void(0);"> <span></span></a></li>
                     <li class="fourth_menu_color"><a id="services" href="javascript:void(0);"><span></span></a></li>
- -->
-                    <!-- <li class="fifth_menu_color"><a id="contacts" href="javascript:void(0);">Contact<span>me</span></a>
-                    </li> -->
+                    -->
                 </ul>
                 <div class="clear"></div>
             </div>
@@ -63,6 +69,11 @@ Demo background-image
                     <div class="section_in">
                         <div class="scroll-pane">
                             <img src="../personal/images/portrait.jpg" style="max-height: 350px" class="fleft about_img" alt="" />
+                            <div class="badge-base LI-profile-badge" data-locale="tr_TR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="ylmzhsn" data-version="v1">
+                                <a class="badge-base__link LI-simple-link" href="https://tr.linkedin.com/in/ylmzhsn?trk=profile-badge">
+                                    Hasan Yılmaz
+                                </a>
+                            </div>
                             <div>
                                 <h2>About</h2>
                                 <p> B.S. CENG '15 METU</p>
@@ -74,6 +85,7 @@ Demo background-image
                     </div>
                 </div>
                 <!--//about_block-->
+
                 <!--resume_block-->
                 <div class="section_block resume_block">
                     <div class="section_in">
@@ -87,24 +99,18 @@ Demo background-image
                                         target="_blank" class="shortcode_button" style="width: 40%;">View cover letter</a>
                                     <a href="https://drive.google.com/u/0/uc?id=1S6fqfCwDm5bBLVs-fnS_FsLn8Zih5Tjl&export=download"
                                         class="shortcode_button download_btn" download style="margin-bottom: 14px; width: 27%;">Download CV</a>
-                                    <!-- <a href="https://docs.google.com/document/d/1CB49lnbqI8aqliFtHUw04EvYzPoD9nKcCL8MISMlYHg/edit?usp=sharing"
-                                                            target="_blank" class="shortcode_button">View full cv</a> -->
                                     <a href="https://docs.google.com/document/d/1emeRZRjzaLhCqY9KKQrz06w57BRbvks_jHWwO4Q7PB8/export?format=pdf"
-                                        class="shortcode_button download_btn" download style="margin-bottom: 14px; width: 40%;">Download cover
-                                        letter</a>
-                                    <!--<a href="https://docs.google.com/document/d/1ul-kLVQPbQrSO62_xEUPU1wD504XQbAXvjqukYxaSdU/edit" target="_blank" class="shortcode_button">View cv with portrait</a> -->
-                                    <!-- <a href="../personal/works/CourseRegister/index.html" class="shortcode_button">Course register system</a> -->
+                                        class="shortcode_button download_btn" download style="margin-bottom: 14px; width: 40%;">Download cover letter</a>
                                 </div>
 
                                 <h2>Projects</h2>
                                 <div class="divider">
-                                    <a href="https://toolcalling.ai" class="shortcode_button"> Tool Calling AI | llm with reactjs </a>
-                                    <a href="https://pypi.org/project/prompt-llm" class="shortcode_button"> prompt_llm | pypi package</a>
-                                    <a href="https://www.npmjs.com/package/custom-permutation" class="shortcode_button"> custom-permutation | npm package</a>
-                                    <a href="../personal/works/TicTacToe-ReactJS" class="shortcode_button">Tic tac toe - React.js, Basic AI Alg.</a>
+                                    <a href="https://toolcalling.ai" class="shortcode_button"> Tool Calling AI - LLM Function Calling web app </a>
+                                    <a href="https://pypi.org/project/prompt-llm" class="shortcode_button"> Prompt LLM | Pypi package</a>
+                                    <a href="https://www.npmjs.com/package/custom-permutation" class="shortcode_button"> Custom Permutation | NPM package</a>
+                                    <a href="../personal/works/TicTacToe-ReactJS" class="shortcode_button">Tic tac toe - Min/Max AI alg.</a>
                                     <a href="../personal/works/shortc" class="shortcode_button">Short course on C/C++</a>
                                     <a href="../personal/works/PredictANumber-ReactJS" class="shortcode_button">Predict a number - React.js</a>
-                                    <!-- <a href="https://kkvilgvpw.github.stackblitz.io/candidate-list" class="shortcode_button">Hr site - Angular</a> -->
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -583,7 +589,7 @@ Demo background-image
                                 <h2></h2>
                                 <p class="home_p">Çankaya, Ankara</p>
                                 <p class="phone_p">5** *** *4 19</p>
-                                <p class="email_p"> e1679349 { at }ceng.metu.edu.tr </p>
+                                <p class="email_p"> yilmazhasan111 { at } gmail.com </p>
                                 <div class="contact_form">
                                     <div id="note"></div>
                                     <div id="fields">
@@ -637,6 +643,7 @@ Demo background-image
         <!--//container-->
         <div style="display: flex">
             <a href="https://github.com/yilmazhasan" class="fa fa-2x fa-github-alt" style="padding: 0.4em 0 0.2em 0; color:white; width: 40px; text-align: center;"> </a>
+            <a href="https://reego.software" class="fa fa-office fa-2x" style="border-left-style: dotted; border-left-width:thin; padding: 0.4em 0 0.2em 0; color: #fff; width: 40px; text-align: center; color: #fff"> RS </a>
             <a href="https://leetcode.com/yilmazhasan/" class="fa fa-2x fa-code" style="border-left-style: dotted; border-left-width:thin; padding: 0.4em 0 0.2em 0; color: #fff; width: 40px; text-align: center; "> </a>
             <a href="https://www.hackerrank.com/profile/hasany" class="fa fa-2x fa-code" style="border-left-style: dotted; border-left-width:thin; padding: 0.4em 0 0.2em 0; color: #fff; width: 40px; text-align: center; "> </a>
             <a href="https://www.linkedin.com/in/yilmazhasan111" class="fa fa-2x fa-linkedin" style="padding: 0.4em 0 0.2em 0; color:white; width: 40px; text-align: center;"></a>
