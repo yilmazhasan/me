@@ -687,6 +687,7 @@ form input.clear_btn:hover {
 .project_item .zoom span {
 	color: #fff;
 	padding: 6px;
+	font-weight: bolder;
 }
 .project_item .item_info,
 .project_item .item_socials {display:none;
