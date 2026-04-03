@@ -191,24 +191,20 @@ h4 {
 } 
 .menu li.first_menu_color a {
 	background-image:url(../images/menu_1.png);
-	background-position:90px 342px;
 }
 .menu li.second_menu_color a {
 	background-image:url(../images/menu_2.png);
-	background-position:90px 342px;
 }
 .menu li.third_menu_color a {
 	background-image:url(../images/menu_3.png);
-	background-position:0 342px;
 }
 .menu li.fourth_menu_color a {
 	background-image:url(../images/menu_4.png);
 }
 .menu li.fifth_menu_color a {
 	background-image:url(../images/menu_5.png);
-	background-position:90px 342px;
 }
-.menu li a:hover {background-position:90px 131px;
+.menu li a:hover {background-position:0 131px;
 }
 /* Inside Page Menu */
 .menu.min_menu {height:40px;
