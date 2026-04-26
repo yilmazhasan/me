@@ -390,15 +390,11 @@ $(document).ready(function(){
 								
 });
 
-
 $(window).resize(function(){
 	containerAlign();	
 });	
 
 $(window).load(function(){
 	//ScrollPane
-	$('.scroll-pane').jScrollPane();		
+	$('.scroll-pane').jScrollPane();
 });
-
-
-
