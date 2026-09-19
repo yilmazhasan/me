@@ -221,8 +221,8 @@ function containerAlign() {
 	var wind_h = jQuery(window).height();
 	var container_h = jQuery('.wrapper').height();
 	if (wind_h >= container_h) {
-		jQuery('.wrapper').css({'padding-top': (wind_h - container_h)/2 + 'px' });
-		jQuery('.settings_panel').css({'top': (wind_h - container_h)/2 + jQuery('#logo').height() - 5 + 'px' });
+		jQuery('.wrapper').css({'padding-top': (wind_h - container_h)/6 + 'px' });
+		jQuery('.settings_panel').css({'top': (wind_h - container_h)/6 + jQuery('#logo').height() - 5 + 'px' });
 	} else {
 		jQuery('.wrapper').css({'padding-top': 50 + 'px', 'padding-bottom': 20 + 'px'});
 		jQuery('.settings_panel').css({'top': 35 + jQuery('#logo').height() + 'px'});
