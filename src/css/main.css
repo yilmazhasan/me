@@ -1275,3 +1275,131 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	background:#f8fafc;
 	border-radius:6px;
 }
+/* ==========================================================================
+   Responsive fixes
+   ========================================================================== */
+.about_row {
+	display:flex;
+	gap:24px;
+	align-items:flex-start;
+}
+.about_side {
+	display:flex;
+	flex-direction:column;
+	gap:12px;
+	flex:0 0 260px;
+}
+.about_portrait {
+	width:100%;
+	height:auto;
+	max-height:350px;
+	object-fit:cover;
+	border-radius:4px;
+}
+.about_text {flex:1 1 auto; min-width:0;
+}
+.social_bar {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+/* Collapsed menu: labels were clipped at the bottom of the 40px bar */
+@media only screen and (min-width: 768px) {
+	.menu.min_menu li a,
+	.menu.min_menu li a:hover {
+		height:30px;
+		padding-top:10px;
+		font-size:20px;
+		line-height:22px;
+		text-align:center;
+		overflow:hidden;
+	}
+}
+
+/* Wide screens: give the content a bit more room */
+@media only screen and (min-width: 1400px) {
+	.wrapper {width:1200px;
+	}
+	.col1_2 {width:540px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.about_row {flex-direction:column;
+	}
+	/* Resume: stack the View / Download groups */
+	.resume_block .col1_2 {
+		display:block;
+		width:100%;
+		clear:both;
+	}
+	.resume_block .col1_2 h2 {margin-top:12px;
+	}
+	/* Leave room under the social bar for the fixed chat button */
+	.social_bar {padding-bottom:56px;
+	}
+	.about_side {
+		flex-basis:auto;
+		width:100%;
+		align-items:center;
+	}
+	.about_portrait {
+		width:60vw;
+		max-width:260px;
+	}
+	.about_text ul {padding-left:18px;
+	}
+	.divider .shortcode_button,
+	.download_btn {
+		width:auto !important;
+		min-width:0 !important;
+		display:inline-block;
+		margin:0 6px 10px 0;
+	}
+	.project_item {
+		width:calc(50% - 6px);
+		height:auto;
+		aspect-ratio:1;
+		margin:12px 0 0 0;
+	}
+	.project_item:nth-of-type(odd) {margin-right:12px;
+	}
+	.project_item img {width:100%; height:100%; object-fit:cover;
+	}
+	#projects_filter a {display:inline-block; margin-bottom:6px;
+	}
+	.social_bar {justify-content:center;
+	}
+	.open-button {
+		width:auto;
+		padding:10px 14px;
+		right:12px;
+		bottom:12px;
+	}
+	.chat-popup {
+		left:10px;
+		right:10px;
+	}
+	.chat-popup .form-container {max-width:none; width:auto;
+	}
+}
+
+/* GitHub Sponsors */
+.social_bar {align-items:center;
+}
+.sponsor_button {margin-left:auto;
+}
+.sponsor_card {margin-top:16px;
+}
+.sponsor_card iframe {
+	display:block;
+	max-width:100%;
+}
+@media only screen and (max-width: 767px) {
+	.sponsor_button {margin:8px auto 0;
+	}
+}

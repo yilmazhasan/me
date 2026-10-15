@@ -6,7 +6,7 @@
 
     <title>Hasan YILMAZ</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Personal web page of Hasan YILMAZ, a senior full-stack developer with ~9 years of experience. Explore his resume, projects, and contact information.">
     <meta name="author" content="@yilmazhasan">
@@ -74,10 +74,12 @@
                 <div class="section_block about_block">
                     <div class="section_in">
                         <div class="scroll-pane">
-                            <div style="display: flex; flex-direction: row;">
-                                <div style="margin: 10px; display: flex; flex-direction: column; width: 35vw;">
-                                    <img src="src/images/portrait.jpg" style="max-height: 350px; width: fit-content;"
-                                        class="fleft about_img" alt="" />
+                            <div class="about_row">
+                                <div class="about_side">
+                                    <img src="src/images/portrait-480.jpg"
+                                        srcset="src/images/portrait-480.jpg 480w, src/images/portrait-960.jpg 960w"
+                                        sizes="(max-width: 767px) 60vw, 260px" width="480" height="640"
+                                        class="about_portrait" alt="Portrait of Hasan Yılmaz" />
                                     <div class="badge-base LI-profile-badge" data-locale="tr_TR" data-size="medium"
                                         data-theme="dark" data-type="VERTICAL" data-vanity="ylmzhsn" data-version="v1">
                                         <button class="shortcode_button">
@@ -89,7 +91,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div style="width: 70vw; margin: 10px;">
+                                <div class="about_text">
                                     <h3>Brief</h3>
                                     <ul style="list-style-type: square">
                                         <li>Bachelor of Science, 2015 - Computer Engineering, METU</li>
@@ -113,6 +115,11 @@
                                         <li>Have knowledge on Microservice architecture with Message Queues such as
                                             Kafka and RabbitMQ.</li>
                                     </ul>
+                                    <div class="sponsor_card">
+                                        <iframe src="https://github.com/sponsors/yilmazhasan/card"
+                                            title="Sponsor yilmazhasan" height="225" width="600" style="border: 0;"
+                                            loading="lazy"></iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -480,7 +487,7 @@
         </div>
 
         <!--//container-->
-        <div style="display: flex">
+        <div class="social_bar">
             <a href="https://github.com/yilmazhasan" class="fa fa-2x fa-github-alt"
                 style="padding: 0.4em 0 0.2em 0; color:white; width: 40px; text-align: center;"> </a>
             <a href="https://www.reego.software" class="fa fa-office fa-2x"
@@ -503,6 +510,8 @@
             <a href="https://www.x.com/the_hasany" class="fa fa-twitter fa-2x"
                 style="border-left-style: dotted; border-left-width:thin; padding: 0.4em 0 0.2em 0; color: #fff; width: 40px; text-align: center; ">
             </a>
+            <iframe class="sponsor_button" src="https://github.com/sponsors/yilmazhasan/button"
+                title="Sponsor yilmazhasan" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
             <!-- <a href="https://www.facebook.com/yilmazhasan111" class="fb_icon">Facebook</a></li><li><a href="https://plus.google.com/u/0/+hasany%C4%B1lmaz111/" class="google_icon">Google+</a> -->
         </div>
     </div>

@@ -395,6 +395,14 @@ $(window).resize(function(){
 });	
 
 $(window).load(function(){
-	//ScrollPane
-	$('.scroll-pane').jScrollPane();
+	//ScrollPane (vertical only; re-measure when a section opens or the window resizes)
+	$('.scroll-pane').jScrollPane({contentWidth: '0px'});
+	var reinitScroll = function(){
+		$('.scroll-pane').each(function(){
+			var api = $(this).data('jsp');
+			if (api) api.reinitialise();
+		});
+	};
+	$('.menu li a, .project_item .zoom a, .close_project a').click(function(){ setTimeout(reinitScroll, 450); });
+	$(window).resize(reinitScroll);
 });
